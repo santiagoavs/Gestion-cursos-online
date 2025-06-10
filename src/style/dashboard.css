@@ -1,0 +1,283 @@
+/* dashboard.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  justify-content: center;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h2.dashboard-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  display: inline-block;
+  user-select: none;
+}
+
+.btn-create {
+  background-color: #4f46e5;
+  color: white;
+  box-shadow: 0 4px 12px rgb(79 70 229 / 0.3);
+}
+
+.btn-create:hover {
+  background-color: #4338ca;
+}
+
+.btn-edit {
+  background-color: #fbbf24;
+  color: #333;
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.btn-edit:hover {
+  background-color: #f59e0b;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem 0.8rem;
+  border: 1.8px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+.form-group span {
+  margin-top: 0.3rem;
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+.card h3 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  color: #4b5563;
+  flex-grow: 1;
+}
+
+.card button {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.buttons-group button {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .dashboard-container {
+    padding: 0 1rem;
+  }
+
+  h2.dashboard-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
+
+/* Ya incluye estilos para .dashboard-container, h2.dashboard-title, .form-group, .btn, .btn-create, .btn-delete, .buttons-group */
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.buttons-group button {
+  min-width: 120px;
+}
+
+.buttons-group .btn-delete {
+  background-color: #ef4444;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-group .btn-delete:hover {
+  background-color: #dc2626;
+}
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  display: block;
+  color: #7663f2;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1.8px solid #7663f2;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4637a6;
+  background-color: #f0f0ff;
+}
+
+.form-group span {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  display: inline-block;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 0.65rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-create {
+  background-color: #7663f2;
+  color: white;
+}
+
+.btn-create:hover {
+  background-color: #5a4cd7;
+}
+
+.btn-delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7663f2;
+  margin-top: 2rem;
+}
