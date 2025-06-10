@@ -1,12 +1,31 @@
-# React + Vite
+# Gestión de Cursos Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con React.js que permite gestionar cursos online mediante un CRUD completo (Crear, Leer, Actualizar y Eliminar). La aplicación consume una API externa para almacenar y manipular los datos de los cursos.
 
-Currently, two official plugins are available:
+## Funcionalidades principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualizar lista de cursos.
+- Crear nuevos cursos.
+- Editar cursos existentes.
+- Eliminar cursos.
+- Navegación entre pantallas con React Router.
+- Validación de formularios con react-hook-form.
+- Mensajes de confirmación y error usando SweetAlert.
+- Diseño responsive para distintos dispositivos.
 
-## Expanding the ESLint configuration
+## Tecnologías usadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js con Vite.
+- React Router DOM.
+- React Hook Form.
+- SweetAlert2.
+- Fetch API para interacción con la API REST.
+- CSS personalizado para estilos.
+
+## Instalación y ejecución local
+
+1. Clonar el repositorio:
+git clone <url-del-repositorio>  
+cd gestión-de-cursos
+npm install
+npm run dev
